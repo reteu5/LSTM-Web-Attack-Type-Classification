@@ -6,6 +6,7 @@ import numpy as np
 
 
 def main():
+    print("start")
     # USAGE: python3 main.py <pcapFile>
     if argv[1][-5:] != '.pcap':
         print("[-] Please specify a pcap file.")
@@ -15,4 +16,8 @@ def main():
     
     # Get a list of packets from a pcap file
     listofPackets = open_tshark(pcapFileName)
-    
+    print(listofPackets)
+    print("end")
+
+if __name__ == '__main__' :
+    main()
