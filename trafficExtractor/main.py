@@ -5,13 +5,13 @@ from trace import Trace
 import numpy as np
 
 
-def main():
+def main() :
     print("start")
     # USAGE: python3 main.py <pcapFile>
-    if argv[1][-5:] != '.pcap':
+    if argv[1][-5:] != '.pcap' :
         print("[-] Please specify a pcap file.")
         exit(1)
-    else:
+    else :
         pcapFileName = argv[1]
     
     # Get a list of packets from a pcap file
