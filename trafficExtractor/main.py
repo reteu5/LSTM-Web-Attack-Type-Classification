@@ -1,4 +1,4 @@
-from load import open_tshark
+from loadpcap import open_tshark
 from sys import argv
 from os import listdir
 from trace import Trace
