@@ -8,13 +8,10 @@ def main() :
     if argv[2][-4:] != '.txt' :
         print("[-] Please specify a txt file.")
         exit(1)
-    else :
-        file = open(argv[2], 'r')
+    else : file = open(argv[2], 'r')
         
-    if argv[1] == "original" :
-        load_txt(file)
-    elif argv[1] == "encoded" :
-        load_encoded_txt(file)
+    if argv[1] == "original" : load_txt(file)
+    elif argv[1] == "encoded" : load_encoded_txt(file)
     else :
         print("[i] USAGE : python3 loadtxt.py [ original / encoded ] <txtFile>")
         exit(1)
