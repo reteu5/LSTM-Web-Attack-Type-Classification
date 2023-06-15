@@ -20,7 +20,7 @@ def main() :
 def load_txt(fp) :
     lines = fp.readlines()
     # debug
-    print(lines)
+    # print(lines)
     fp.close()
 
 def load_encoded_txt(fp) :    
